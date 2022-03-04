@@ -489,6 +489,7 @@ nav .nav-links a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow-wrap: break-word;
   overflow: hidden;
 }
 
