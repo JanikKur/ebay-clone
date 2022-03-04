@@ -330,6 +330,192 @@ nav .nav-links a {
   background-size: 16px;
 }
 
+.cathegory-list {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 250px;
+  padding: 10px;
+}
+
+.title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.title-wrapper .title {
+  margin: 0;
+}
+
+.announcement-list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.announcement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 200px;
+  width: 165px;
+  background-color: white;
+  color: black;
+}
+
+.announcement:hover, .announcement:focus {
+  text-decoration: none;
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.announcement-image-wrapper {
+  width: 100%;
+  height: 140px;
+  position: relative;
+}
+
+.announcement-price {
+  position: absolute;
+  margin: 0;
+  bottom: 10px;
+  right: -5px;
+  background-color: #86B817;
+  color: white;
+  padding: 3px 2px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.announcement-price::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-top: 5px solid #86B817;
+  border-right: 5px solid transparent;
+  right: 0px;
+  bottom: -5px;
+}
+
+.announcement-preview-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: none;
+}
+
+.announcement-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.announcement-description .announcement-title {
+  margin: 0;
+  display: block;
+  width: 100%;
+  height: 14px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.announcement-description .announcement-title::after {
+  content: "...";
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .authenticate {
   background-color: white;
   padding: 10px;
@@ -475,5 +661,18 @@ main {
   width: 100%;
   max-width: 1000px;
   margin: auto;
+}
+
+a {
+  color: #508200;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

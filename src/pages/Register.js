@@ -36,7 +36,7 @@ export default function Register() {
                         <label></label>
                         <PasswordChecklist password={password} />
                     </div>
-                    <p>Es gelten unsere Nutzungsbedingungen. Informationen zur Verarbeitung Deiner Daten findest Du in unserer Datenschutzerklärung. </p>
+                    <p>Es gelten unsere <a href="/">Nutzungsbedingungen</a>. Informationen zur Verarbeitung Deiner Daten findest Du in unserer <a href="/">Datenschutzerklärung</a>. </p>
                     <div className="mail-wrapper">
                         <input type="checkbox" id="mails" name="mails" /><label htmlFor="mails">Ja, zu regelmäßigen Mails von uns mit Produktinfos, Tipps, Aktionen und spannenden Geschichten über uns und mobile.de - Abmelden geht jederzeit </label>
                     </div>

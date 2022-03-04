@@ -1,0 +1,10 @@
+.announcement-list{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}

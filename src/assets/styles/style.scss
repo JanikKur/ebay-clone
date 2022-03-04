@@ -4,7 +4,11 @@
 @import './components/mainLogo';
 @import './components/button';
 @import './components/icon';
+@import './components/cathegories/cathegoryList';
+@import './components/announcements/announcementList';
+@import './components/announcements/announcement';
 
+@import './pages/home';
 @import './pages/register';
 @import './pages/login';
 
@@ -24,4 +28,14 @@ main{
     width: 100%;
     max-width: 1000px;
     margin: auto;
+}
+a{
+    color: #508200;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+h2{
+    font-size: 20px;  
 }
