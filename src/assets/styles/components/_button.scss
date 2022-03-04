@@ -1,0 +1,41 @@
+.primary-btn, .secondary-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: #86B817;
+    border-radius: 10px;
+    font-weight: 700;
+    line-height: 130%;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+.primary-btn:hover{
+    background-color: #76A811;
+}
+.secondary-btn{
+    color: #508200;
+    background-color: white;
+    border: 1px solid #86B817;
+}
+.secondary-btn:hover{
+    background-color: #F3F8E8;
+}
+.submit-btn{
+    background-color: #508200;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-weight: 700;
+    padding: 7px 12px;
+    border-radius: 10px;
+    gap: .3rem;
+    line-height: 130%;
+    cursor: pointer;
+}

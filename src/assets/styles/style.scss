@@ -1,0 +1,27 @@
+@import './components/navigation/navigation';
+@import './components/header/header';
+@import './components/footer/footer';
+@import './components/mainLogo';
+@import './components/button';
+@import './components/icon';
+
+@import './pages/register';
+@import './pages/login';
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    color: #202020;
+}
+main{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
