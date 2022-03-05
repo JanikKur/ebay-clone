@@ -13,6 +13,13 @@
         object-fit: contain;
         position: relative;
         z-index: 1;
+        transition: all 1.5s;
+        opacity: 0;
+        animation: fade-in .5s ease-in-out forwards;
+        &:hover{
+            height: 102%;
+            width: 102%;
+        }
     }
     .current-index{
         position: absolute;
@@ -62,5 +69,12 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+    }
+}
+
+
+@keyframes fade-in {
+    100%{
+        opacity: 1;
     }
 }

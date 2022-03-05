@@ -22,6 +22,19 @@ export default function Article() {
         <section className='interaction'>
             <button className='primary-btn'><i className='icon message-icon'/>Nachricht Schreiben</button>
             <button className='action-btn'><i className='icon save-icon'/>Zur Merkliste hinzufügen</button>
+            <article className='author-informations'>
+                <div className='author'>
+                    <img src="" className='profile-image' alt={"Author Name"}/>
+                    <div className='author-data'>
+                        <label className='author-name'>Andreas Peterson</label>
+                        <label>Privater Nutzer</label>
+                        <label>Aktiv seit 24.06.2021</label>
+                    </div>
+                </div>
+                <div className='follow-wrapper'>
+                    <button className='secondary-btn'><i className='icon follow-icon'/>Folgen</button>
+                </div>
+            </article>
         </section>
     </main>
   )
