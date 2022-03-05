@@ -1,0 +1,66 @@
+
+.image-gallery{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .image{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        position: relative;
+        z-index: 1;
+    }
+    .current-index{
+        position: absolute;
+        z-index: 2;
+        bottom: 10px;
+        right: 10px;
+        color: white;
+        padding: 5px;
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        border-radius: 5px;
+        background-color: rgba(0,0,0,.6);
+    }
+    .idx-icon{
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEzIDQuNUMxMy4zIDQuNSAxMy41IDQuNyAxMy41IDVWMTJDMTMuNSAxMi4zIDEzLjMgMTIuNSAxMyAxMi41SDNDMi43IDEyLjUgMi41IDEyLjMgMi41IDEyVjVDMi41IDQuNyAyLjcgNC41IDMgNC41SDQuNEM0LjkgNC41IDUuMyA0LjMgNS42IDRMNi4xIDMuNUg5LjlMMTAuNCA0QzEwLjcgNC4zIDExLjEgNC41IDExLjYgNC41SDEzWk0xIDVDMSAzLjkgMS45IDMgMyAzSDQuNEM0LjUgMyA0LjUgMyA0LjUgM0w1LjIgMi4zQzUuNCAyLjEgNS42IDIgNS45IDJIMTAuMUMxMC40IDIgMTAuNiAyLjEgMTAuOCAyLjNMMTEuNSAzQzExLjUgMyAxMS41IDMgMTEuNiAzSDEzQzE0LjEgMyAxNSAzLjkgMTUgNVYxMkMxNSAxMy4xIDE0LjEgMTQgMTMgMTRIM0MxLjkgMTQgMSAxMy4xIDEgMTJWNVpNOS41IDguNUM5LjUgOS4zIDguOCAxMCA4IDEwIDcuMiAxMCA2LjUgOS4zIDYuNSA4LjUgNi41IDcuNyA3LjIgNyA4IDcgOC44IDcgOS41IDcuNyA5LjUgOC41Wk0xMSA4LjVDMTEgMTAuMiA5LjcgMTEuNSA4IDExLjUgNi4zIDExLjUgNSAxMC4yIDUgOC41IDUgNi44IDYuMyA1LjUgOCA1LjUgOS43IDUuNSAxMSA2LjggMTEgOC41WiIgZmlsbD0iI2ZmZmZmZiIvPjwvc3ZnPgo=');
+    }
+}
+.change-image-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    background-color: rgba(0,0,0,.6);
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 2;
+}
+.change-image-btn.right{
+    right: 0%;
+    border-radius: 5px 0px 0px 5px;
+}
+.change-image-btn.left{
+    left: 0%;
+    border-radius: 0px 5px 5px 0px;
+}
+.background-img-wrapper{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(10px) grayscale(50%);
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import Announcement from './Announcement'
 
-export default function AnnouncementList() {
+export default function AnnouncementList({count, filter}) {
   return (
     <section className="announcement-list">
        <div className="title-wrapper">

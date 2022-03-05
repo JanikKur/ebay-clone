@@ -2,7 +2,7 @@ import React from 'react'
 import TestImg from '../../assets/images/test.bmp';
 export default function Announcement({url}) {
   return (
-    <a href="/" className="announcement">
+    <a href="/article" className="announcement">
         <div className="announcement-image-wrapper">
             <img className="announcement-preview-img" alt={"TEst"} src={TestImg}/>
             <p className="announcement-price">59.631 € VB</p>

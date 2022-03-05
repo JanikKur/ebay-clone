@@ -1,4 +1,4 @@
-.primary-btn, .secondary-btn{
+.primary-btn, .secondary-btn, .action-btn{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -38,4 +38,14 @@
     gap: .3rem;
     line-height: 130%;
     cursor: pointer;
+}
+
+.action-btn{
+    color: black;
+    background-color: white;
+    border: 1px solid rgba(80,80,80, .5);
+
+    &:hover{
+        background-color: #E9E9E9;
+    }
 }

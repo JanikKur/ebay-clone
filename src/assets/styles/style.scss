@@ -7,10 +7,12 @@
 @import './components/cathegories/cathegoryList';
 @import './components/announcements/announcementList';
 @import './components/announcements/announcement';
+@import './components/imageGallery';
 
 @import './pages/home';
 @import './pages/register';
 @import './pages/login';
+@import './pages/article';
 
 *{
     font-family: Arial, Helvetica, sans-serif;
