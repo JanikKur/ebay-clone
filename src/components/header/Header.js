@@ -18,7 +18,7 @@ export default function Header() {
         </div> : 
         <div className="logged-in">
           <label>angemeldet als: {currentUser.email}</label>
-          <a href="#" onClick={logout}>abmelden</a>
+          <a href="#" onClick={logout}>Ausloggen</a>
           <a href="/notifications"><i className="icon notification-icon"/></a>
         </div>
         }
