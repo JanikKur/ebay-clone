@@ -1,18 +1,27 @@
 import React, { useState, useRef } from 'react'
 import PasswordChecklist from '../components/register/PasswordChecklist';
+import { useUser } from '../contexts/UserContext';
 import { checkPassword } from '../utils/checkPassword';
 
 export default function Register() {
 
     const [password, setPassword] = useState('');
+    const emailInputRef = useRef();
     const passwordInputRef = useRef();
     const [showPassword, setShowPassword] = useState(false);
+    const {registerUser} = useUser();
 
-    let register = e => {
+    let register = async e => {
         e.preventDefault();
         if(!checkPassword(password)){
             passwordInputRef.current.focus();
             return;
+        }
+        try{
+            await registerUser(emailInputRef.current.value, passwordInputRef.current.value);
+        }
+        catch(err){
+            console.log(err);
         }
     }
 
@@ -25,7 +34,7 @@ export default function Register() {
                 <form onSubmit={register}>
                     <div className="form-group">
                         <label>E-Mail</label>
-                        <input type="email" placeholder="E-Mail" className="form-control" required />
+                        <input ref={emailInputRef} type="email" placeholder="E-Mail" className="form-control" required />
                     </div>
                     <div className="form-group">
                         <label>Passwort</label>
